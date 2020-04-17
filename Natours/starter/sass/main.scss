@@ -9,6 +9,7 @@
 
 @import 'components/button';
 @import 'components/composition';
+@import 'components/feature-box';
 
 @import 'layout/grid';
 @import 'layout/header';
@@ -17,9 +18,9 @@
 
 // DEV 
 .header {
-  height: 5vh;
+  // display: none;
 }
 
 .section-about {
-  display: none;
+  // display: none;
 }
