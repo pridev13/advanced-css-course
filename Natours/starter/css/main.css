@@ -242,3 +242,9 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.header {
+  height: 5vh; }
+
+.section-about {
+  display: none; }

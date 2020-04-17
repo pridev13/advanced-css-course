@@ -14,3 +14,12 @@
 @import 'layout/header';
 
 @import 'pages/home';
+
+// DEV 
+.header {
+  height: 5vh;
+}
+
+.section-about {
+  display: none;
+}
