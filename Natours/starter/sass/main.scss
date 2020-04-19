@@ -7,10 +7,12 @@
 @import 'base/typography';
 @import 'base/utilities';
 
+@import 'components/bg-video';
 @import 'components/button';
 @import 'components/card';
 @import 'components/composition';
 @import 'components/feature-box';
+@import 'components/story';
 
 @import 'layout/grid';
 @import 'layout/header';
@@ -18,6 +20,6 @@
 @import 'pages/home';
 
 // DEV 
-.header, .section-about, .section-features {
+.header, .section-about, .section-features, .section-tours, .section-stories {
   // display: none; 
 }
