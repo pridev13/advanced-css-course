@@ -15,12 +15,18 @@
 @import 'components/form';
 @import 'components/story';
 
+@import 'layout/footer';
 @import 'layout/grid';
 @import 'layout/header';
 
 @import 'pages/home';
 
-// DEV 
-.header, .section-about, .section-features, .section-tours, .section-stories, .section-book {
-  // display: none; 
+// DEV
+.header,
+.section-about,
+.section-features,
+.section-tours,
+.section-stories,
+.section-bookkkk {
+	// display: none;
 }
