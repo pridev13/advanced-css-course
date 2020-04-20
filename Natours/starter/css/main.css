@@ -605,7 +605,8 @@ body {
       padding-left: 7rem; } }
   @media (max-width: 37.5em) {
     .story {
-      transform: skewX(0); } }
+      transform: skewX(0);
+      padding-left: 4rem; } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -616,7 +617,7 @@ body {
     position: relative; }
     @media (max-width: 37.5em) {
       .story__shape {
-        transform: translateX(-3rem) skewX(0); } }
+        transform: translateX(-1rem) skewX(0); } }
   .story__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
@@ -649,7 +650,7 @@ body {
 .footer {
   color: #f7f7f7;
   background-color: #333;
-  padding: 10rem 0;
+  padding: 10rem 6rem;
   font-size: 1.4rem; }
   @media (max-width: 56.25em) {
     .footer {
@@ -670,7 +671,8 @@ body {
     @media (max-width: 56.25em) {
       .footer__navigation {
         width: 100%;
-        text-align: center; } }
+        text-align: center;
+        font-size: 1.2rem; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -815,6 +817,9 @@ body {
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center; }
+  @media (max-width: 37.5em) {
+    .navigation__list {
+      width: 80%; } }
 
 .navigation__item {
   margin: 1rem 0; }
@@ -925,13 +930,16 @@ body {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
   background-size: cover;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  margin: 0px 6rem; }
   @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg); } }
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg);
+      margin: 0px 3rem; } }
   @media (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg);
+      margin: 0px; } }
   .book__form {
     width: 50%;
     padding: 6rem; }
@@ -940,7 +948,8 @@ body {
         width: 65%; } }
     @media (max-width: 56.25em) {
       .book__form {
-        width: 100%; } }
+        width: 100%;
+        padding: 4rem; } }
 
 .header,
 .section-about,

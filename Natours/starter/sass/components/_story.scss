@@ -14,9 +14,10 @@
 		padding: 4rem;
 		padding-left: 7rem;
 	}
-
+	
 	@include responsive(phone) {
 		transform: skewX(0);
+		padding-left: 4rem;
 	}
 
 	&__shape {
@@ -29,7 +30,7 @@
 		position: relative;
 
 		@include responsive(phone) {
-			transform: translateX(-3rem) skewX(0);
+			transform: translateX(-1rem) skewX(0);
 		}
 	}
 
