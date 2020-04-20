@@ -519,7 +519,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    width: 75%;
+    width: 90%;
+    max-width: 119rem;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     overflow: hidden;
@@ -534,13 +535,13 @@ body {
     width: 33.33333%; }
   .popup__right {
     width: 66.66667%;
-    padding: 3rem 5rem; }
+    padding: 2rem 5rem; }
   .popup__image {
     display: block;
     width: 100%; }
   .popup__text {
     font-size: 1.4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid #eee;
@@ -564,6 +565,28 @@ body {
     outline: none; }
   .popup__close:hover {
     color: #55c57a; }
+  @media (max-width: 75em) {
+    .popup__left, .popup__right {
+      display: block;
+      width: 100%; }
+    .popup__left {
+      height: 33%;
+      overflow: hidden; }
+      .popup__left::after {
+        content: '';
+        display: table;
+        clear: both; }
+    .popup__right {
+      position: relative;
+      top: 0px;
+      left: 0px; }
+    .popup__image {
+      width: 50%;
+      float: left;
+      clip-path: polygon(0 0, 100% 0, 100% 30vw, 0 30vw); }
+    .popup__close:link {
+      top: .5rem;
+      right: 1rem; } }
 
 .story {
   width: 75%;
