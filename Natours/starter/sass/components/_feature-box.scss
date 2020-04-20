@@ -17,13 +17,17 @@
 
 	&__icon {
 		font-size: 6rem;
-		background-image: linear-gradient(
-			to right,
-			$color-primary-light,
-			$color-primary-dark
-		);
 		display: inline-block;
-		background-clip: text;
-		color: transparent;
+		color: $color-primary;
+
+		@supports (background-clip: text) {
+			background-image: linear-gradient(
+				to right,
+				$color-primary-light,
+				$color-primary-dark
+			);
+			background-clip: text;
+			color: transparent;
+		}
 	}
 }

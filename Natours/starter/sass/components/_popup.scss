@@ -10,6 +10,13 @@
 	visibility: hidden;
 	transition: all 0.3s;
 
+	@supports (-moz-backdrop-filter: blur(10px)) or
+		(-webkit-backdrop-filter: blur(10px)) or (-ms-backdrop-filter: blur(10px))
+		or (-o-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+		background-color: rgba($color: $color-black, $alpha: 0.3);
+		backdrop-filter: blur(10px);
+	}
+
 	&__content {
 		@include absCenter;
 
@@ -85,7 +92,6 @@
 	}
 
 	@include responsive(tab-land) {
-
 		&__left,
 		&__right {
 			display: block;
@@ -112,10 +118,9 @@
 
 		&__close {
 			&:link {
-				top: .5rem;
+				top: 0.5rem;
 				right: 1rem;
 			}
 		}
-
 	}
 }

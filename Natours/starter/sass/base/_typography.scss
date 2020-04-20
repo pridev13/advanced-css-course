@@ -32,7 +32,7 @@ body {
 		animation: moveInRight 1s ease-out;
 
 		@include responsive(phone) {
-			letter-spacing: .5rem;
+			letter-spacing: 0.5rem;
 		}
 	}
 }
@@ -41,16 +41,20 @@ body {
 	font-size: 3.5rem;
 	text-transform: uppercase;
 	font-weight: 700;
-	background-image: linear-gradient(
-		to right,
-		$color-primary-light,
-		$color-primary-dark
-	);
 	display: inline-block;
-	background-clip: text;
-	color: transparent;
 	letter-spacing: 0.2rem;
 	transition: all 0.2s;
+	color: $color-primary;
+
+	@supports (background-clip: text) {
+		background-image: linear-gradient(
+			to right,
+			$color-primary-light,
+			$color-primary-dark
+		);
+		background-clip: text;
+		color: transparent;
+	}
 
 	@include responsive(tab-port) {
 		font-size: 3rem;
