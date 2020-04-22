@@ -387,9 +387,14 @@ body {
       height: 1rem;
       width: 1rem;
       margin-right: 0.7rem;
-      background-color: var(--color-primary);
-      mask-image: url(../img/chevron-thin-right.svg);
-      mask-size: cover; }
+      background-image: url(../img/chevron-thin-right.svg);
+      background-size: cover; }
+      @supports (mask-image: url()) {
+        .list__item::before {
+          background-image: none;
+          background-color: var(--color-primary);
+          mask-image: url(../img/chevron-thin-right.svg);
+          mask-size: cover; } }
 
 .recommend {
   font-size: 1.3rem;
