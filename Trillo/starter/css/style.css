@@ -200,6 +200,51 @@ body {
     height: 3.75rem;
     border-radius: 50%;
     margin-right: 1rem; }
+  .user-nav__user {
+    position: relative; }
+  .user-nav__user-list {
+    background-color: #fff;
+    border: var(--line);
+    box-shadow: var(--shadow-light);
+    position: absolute;
+    bottom: 0px;
+    left: 5%;
+    min-width: 90%;
+    transform: translateY(100%);
+    list-style: none;
+    padding: 0rem 0;
+    border-radius: 3px;
+    overflow: hidden;
+    z-index: 999;
+    backface-visibility: hidden;
+    opacity: 0;
+    height: 0px;
+    transition: all 0.3s; }
+  .user-nav:hover .user-nav__user-list,
+  .user-nav:focus .user-nav__user-list {
+    opacity: 1;
+    height: 13rem; }
+  .user-nav__user-item:not(:last-child) {
+    border-bottom: var(--line); }
+  .user-nav__user-link {
+    transition: all 0.2s;
+    display: flex;
+    align-items: baseline;
+    padding: 1rem 1rem; }
+    .user-nav__user-link:link, .user-nav__user-link:visited {
+      text-decoration: none;
+      color: var(--color-grey-dark-2); }
+    .user-nav__user-link:hover, .user-nav__user-link:active {
+      color: var(--color-primary);
+      background-color: var(--color-grey-light-2); }
+      .user-nav__user-link:hover .user-nav__user-item-icon, .user-nav__user-link:active .user-nav__user-item-icon {
+        margin-right: 1rem; }
+  .user-nav__user-item-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: currentColor;
+    margin-right: 0.5rem;
+    transition: all 0.2s; }
 
 .side-nav {
   font-size: 1.4rem;
