@@ -118,48 +118,74 @@
 		margin-right: 1rem;
 	}
 
-	&__user {
-		position: relative;
-	}
-
-	&__user-list {
+	//Dropdown menus
+	&__dropdown {
 		background-color: #fff;
 		border: var(--line);
 		box-shadow: var(--shadow-light);
 		position: absolute;
 		bottom: 0px;
-		left: 5%;
-		min-width: 90%;
+		left: 0%;
+		width: 100%;
 		transform: translateY(100%);
-		list-style: none;
-		padding: 0rem 0;
 		border-radius: 3px;
 		overflow: hidden;
 		z-index: 999;
 		backface-visibility: hidden;
+		text-align: center;
 
 		opacity: 0;
 		height: 0px;
 		transition: all 0.3s;
+
+		&--bookmark {
+			left: -100%;
+			width: 300%;
+		}
+
+		&--user {
+			left: 5%;
+			width: 90%;
+		}
+
+		.btn-inline {
+			margin: 0.5rem 0;
+		}
 	}
 
-	&__user:hover &__user-list,
-	&__user:focus &__user-list {
+	&__dropdown-item {
+		border-bottom: var(--line);
+	}
+
+	&__dropdown--user &__dropdown-item:last-child {
+		border-bottom: none;
+	}
+
+	&__icon-box--bookmark:hover &__dropdown,
+	&__icon-box--bookmark:focus &__dropdown {
+		opacity: 1;
+		height: 26rem;
+	}
+
+	&__user:hover &__dropdown,
+	&__user:focus &__dropdown {
 		opacity: 1;
 		height: 13rem;
 	}
 
-	&__user-item {
-		&:not(:last-child) {
-			border-bottom: var(--line);
-		}
+	&__user {
+		position: relative;
 	}
 
-	&__user-link {
+	&__dropdown-link {
 		transition: all 0.2s;
 		display: flex;
-		align-items: baseline;
+		align-items: center;
 		padding: 1rem 1rem;
+
+		&--user {
+			align-items: baseline;
+		}
 
 		&:link,
 		&:visited {
@@ -172,18 +198,35 @@
 			color: var(--color-primary);
 			background-color: var(--color-grey-light-2);
 
-			.user-nav__user-item-icon {
+			.user-nav__dropdown-photo {
+				transform: scale(1.1);
+				margin-right: 2rem;
+				border: 1px solid var(--color-primary);
+			}
+
+			.user-nav__dropdown-icon {
 				margin-right: 1rem;
 			}
 		}
 	}
 
-	&__user-item-icon {
+	&__dropdown-photo,
+	&__dropdown-icon {
+		transition: all 0.2s;
+	}
+
+	&__dropdown-photo {
+		width: 3.5rem;
+		height: 3.5rem;
+		border-radius: 50%;
+		margin-right: 1rem;
+	}
+
+	&__dropdown-icon {
 		width: 1.3rem;
 		height: 1.3rem;
-		fill: currentColor;
 		margin-right: 0.5rem;
-		transition: all 0.2s;
+		fill: currentColor;
 	}
 }
 

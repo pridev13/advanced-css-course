@@ -30,14 +30,73 @@
 					</button>
 				</form>
 				<nav class="user-nav">
-					<div class="user-nav__icon-box">
+					<div class="user-nav__icon-box user-nav__icon-box--bookmark">
 						<svg class="user-nav__icon">
 							<use xlink:href="img/sprite.svg#icon-bookmark"></use>
 						</svg>
 						<span class="user-nav__notification">7</span>
+
+						<div class="user-nav__dropdown user-nav__dropdown--bookmark">
+							<ul class="user-nav__dropdown-list">
+								<li class="user-nav__dropdown-item">
+									<a
+										href="#"
+										class="user-nav__dropdown-link user-nav__dropdown-link--bookmark"
+									>
+										<img
+											src="img/hotel-4.jpg"
+											alt="Hotel 1"
+											class="user-nav__dropdown-photo"
+										/>
+										Hotel 1
+									</a>
+								</li>
+								<li class="user-nav__dropdown-item">
+									<a
+										href="#"
+										class="user-nav__dropdown-link user-nav__dropdown-link--bookmark"
+									>
+										<img
+											src="img/hotel-5.jpg"
+											alt="Hotel 2"
+											class="user-nav__dropdown-photo"
+										/>
+										Hotel 2
+									</a>
+								</li>
+								<li class="user-nav__dropdown-item">
+									<a
+										href="#"
+										class="user-nav__dropdown-link user-nav__dropdown-link--bookmark"
+									>
+										<img
+											src="img/hotel-6.jpg"
+											alt="Hotel 3"
+											class="user-nav__dropdown-photo"
+										/>
+										Hotel 3
+									</a>
+								</li>
+								<li class="user-nav__dropdown-item">
+									<a
+										href="#"
+										class="user-nav__dropdown-link user-nav__dropdown-link--bookmark"
+									>
+										<img
+											src="img/hotel-7.jpg"
+											alt="Hotel 4"
+											class="user-nav__dropdown-photo"
+										/>
+										Hotel 4
+									</a>
+								</li>
+							</ul>
+
+							<button class="btn-inline">See all <span>&rarr;</span></a>
+						</div>
 					</div>
 
-					<div class="user-nav__icon-box">
+					<div class="user-nav__icon-box user-nav__icon-box--chat">
 						<svg class="user-nav__icon">
 							<use xlink:href="img/sprite.svg#icon-chat"></use>
 						</svg>
@@ -47,32 +106,35 @@
 					<div class="user-nav__user">
 						<img src="img/user.jpg" alt="You" class="user-nav__user-photo" />
 						<span class="user-nav__user-name">Jari</span>
-						<ul class="user-nav__user-list">
-							<li class="user-nav__user-item">
-								<a href="#" class="user-nav__user-link">
-									<svg class="user-nav__user-item-icon">
-										<use xlink:href="img/sprite2.svg#icon-user"></use>
-									</svg>
-									Profile
-								</a>
-							</li>
-							<li class="user-nav__user-item">
-								<a href="#" class="user-nav__user-link">
-									<svg class="user-nav__user-item-icon">
-										<use xlink:href="img/sprite2.svg#icon-cog"></use>
-									</svg>
-									Settings
-								</a>
-							</li>
-							<li class="user-nav__user-item">
-								<a href="#" class="user-nav__user-link">
-									<svg class="user-nav__user-item-icon">
-										<use xlink:href="img/sprite2.svg#icon-log-out"></use>
-									</svg>
-									Log out</a
-								>
-							</li>
-						</ul>
+
+						<div class="user-nav__dropdown user-nav__dropdown--user">
+							<ul class="user-nav__dropdown-list">
+								<li class="user-nav__dropdown-item">
+									<a href="#" class="user-nav__dropdown-link user-nav__dropdown-link--user">
+										<svg class="user-nav__dropdown-icon">
+											<use xlink:href="img/sprite2.svg#icon-user"></use>
+										</svg>
+										Profile
+									</a>
+								</li>
+								<li class="user-nav__dropdown-item">
+									<a href="#" class="user-nav__dropdown-link user-nav__dropdown-link--user">
+										<svg class="user-nav__dropdown-icon">
+											<use xlink:href="img/sprite2.svg#icon-cog"></use>
+										</svg>
+										Settings
+									</a>
+								</li>
+								<li class="user-nav__dropdown-item">
+									<a href="#" class="user-nav__dropdown-link user-nav__dropdown-link--user">
+										<svg class="user-nav__dropdown-icon">
+											<use xlink:href="img/sprite2.svg#icon-log-out"></use>
+										</svg>
+										Log out
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</nav>
 			</header>
