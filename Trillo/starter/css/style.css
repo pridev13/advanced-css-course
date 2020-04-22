@@ -217,7 +217,7 @@ body {
     opacity: 0;
     height: 0px;
     transition: all 0.3s; }
-    .user-nav__dropdown--bookmark {
+    .user-nav__dropdown--bookmark, .user-nav__dropdown--chat {
       left: -100%;
       width: 300%; }
     .user-nav__dropdown--user {
@@ -229,6 +229,8 @@ body {
     border-bottom: var(--line); }
   .user-nav__dropdown--user .user-nav__dropdown-item:last-child {
     border-bottom: none; }
+  .user-nav__icon-box--chat:hover .user-nav__dropdown,
+  .user-nav__icon-box--chat:focus .user-nav__dropdown,
   .user-nav__icon-box--bookmark:hover .user-nav__dropdown,
   .user-nav__icon-box--bookmark:focus .user-nav__dropdown {
     opacity: 1;
