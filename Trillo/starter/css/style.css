@@ -220,8 +220,8 @@ body {
     opacity: 0;
     height: 0px;
     transition: all 0.3s; }
-  .user-nav:hover .user-nav__user-list,
-  .user-nav:focus .user-nav__user-list {
+  .user-nav__user:hover .user-nav__user-list,
+  .user-nav__user:focus .user-nav__user-list {
     opacity: 1;
     height: 13rem; }
   .user-nav__user-item:not(:last-child) {
