@@ -74,7 +74,32 @@ body {
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center; }
+  .sidebar:hover .nav-btn {
+    background-color: transparent; }
+    .sidebar:hover .nav-btn::before {
+      transform: translateY(-1.5rem) rotate(45deg); }
+    .sidebar:hover .nav-btn::after {
+      transform: translateY(1.3rem) rotate(-45deg); }
+
+.nav-btn {
+  border: 0;
+  border-radius: 0;
+  margin-top: 4rem; }
+  .nav-btn, .nav-btn::before, .nav-btn::after {
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+    transition: all 0.1s; }
+  .nav-btn::before, .nav-btn::after {
+    content: '';
+    display: block; }
+  .nav-btn::before {
+    transform: translateY(-1.5rem); }
+  .nav-btn::after {
+    transform: translateY(1.3rem); }
 
 .header {
   background-color: #54483a;

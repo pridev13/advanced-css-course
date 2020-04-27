@@ -1,5 +1,51 @@
 .sidebar {
-  background-color: $color-primary;
-  grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1;
+	background-color: $color-primary;
+	grid-column: sidebar-start / sidebar-end;
+	grid-row: 1 / -1;
+
+	display: flex;
+	justify-content: center;
+
+	&:hover {
+		.nav-btn {
+			background-color: transparent;
+
+			&::before {
+				transform: translateY(-1.5rem) rotate(45deg);
+			}
+
+			&::after {
+				transform: translateY(1.3rem) rotate(-45deg);
+			}
+		}
+	}
+}
+
+.nav-btn {
+	border: 0;
+	border-radius: 0;
+	margin-top: 4rem;
+
+	&,
+	&::before,
+	&::after {
+		background-color: #fff;
+		height: 2px;
+		width: 4.5rem;
+		transition: all 0.1s;
+	}
+
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+	}
+
+	&::before {
+		transform: translateY(-1.5rem);
+	}
+
+	&::after {
+		transform: translateY(1.3rem);
+	}
 }
